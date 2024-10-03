@@ -1,0 +1,8 @@
+<configuration>
+    <encoding>UTF-8</encoding>
+    <protocol>https</protocol>
+    <offlineMode>true</offlineMode>
+    <documentTitle>Test Automation Report</documentTitle>
+    <reportName>My Project Web Test Report</reportName>
+    <theme>standard</theme>
+</configuration>
