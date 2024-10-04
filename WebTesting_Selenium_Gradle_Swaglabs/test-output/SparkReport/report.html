@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 2, 2024 04:30:14 PM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 4, 2024 07:51:26 PM</span></a>
 </li>
 </ul>
 </div>
@@ -81,7 +81,7 @@
           <div class="test-detail">
             <p class="name">Menu Page</p>
             <p class="text-sm">
-              <span>4:30:15 PM</span> / <span>00:00:05:733</span>
+              <span>7:51:27 PM</span> / <span>00:00:12:367</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,9 +90,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Menu Page</h5>
-<span class='badge badge-success'>10.02.2024 4:30:15 PM</span>
-<span class='badge badge-danger'>10.02.2024 4:30:20 PM</span>
-<span class='badge badge-default'>00:00:05:733</span>
+<span class='badge badge-success'>10.04.2024 7:51:27 PM</span>
+<span class='badge badge-danger'>10.04.2024 7:51:39 PM</span>
+<span class='badge badge-default'>00:00:12:367</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -105,37 +105,112 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Memastikan menu "All Items" bernavigasi sesuai dengan fungsionalitas</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Memastikan menu "<menu>" bernavigasi sesuai dengan fungsionalitas</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="swaglabs.steps.loginStep.sudahLogin()">
-                <span>Given Sudah login</span>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Memastikan menu "All Items" bernavigasi sesuai dengan fungsionalitas</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Sudah login</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="swaglabs.steps.productStep.klikProdukDetail(java.lang.String)">
-                <span>When Klik produk detail "Sauce Labs Backpack"</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Klik produk detail "Sauce Labs Backpack"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="swaglabs.steps.menuStep.klikMenuButton()">
-                <span>And Klik menu button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Klik menu button</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="swaglabs.steps.menuStep.klik(java.lang.String)">
-                <span>And Klik "All Items"</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Klik menu "All Items"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="swaglabs.steps.menuStep.berhasilMengarahkanKeProductPage()">
-                <span>Then Berhasil mengarahkan ke product page</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Berhasil "mengarahkan ke product page"</span>
       <div>
       </div>
+                  </div>
               </div>
-          </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Memastikan menu "About" bernavigasi sesuai dengan fungsionalitas</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Sudah login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Klik produk detail "Sauce Labs Backpack"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Klik menu button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Klik menu "About"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Berhasil "mengarahkan ke about page"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Memastikan menu "Logout" bernavigasi sesuai dengan fungsionalitas</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Sudah login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Klik produk detail "Sauce Labs Backpack"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Klik menu button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Klik menu "Logout"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Berhasil "mengarahkan ke login page"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
         </div>
   </div>
 </div>
@@ -155,13 +230,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 2, 2024 04:30:14 PM</h3>
+<h3>Oct 4, 2024 07:51:26 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 2, 2024 04:30:21 PM</h3>
+<h3>Oct 4, 2024 07:51:39 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -212,7 +287,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -232,7 +307,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>15</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -251,7 +326,7 @@
 </div></div>
 <script>
 var timeline = {
-"Menu Page":5.733
+"Menu Page":12.367
 };
 </script>
 <div class="row">
@@ -265,13 +340,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 3,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
+passGrandChild: 15,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,

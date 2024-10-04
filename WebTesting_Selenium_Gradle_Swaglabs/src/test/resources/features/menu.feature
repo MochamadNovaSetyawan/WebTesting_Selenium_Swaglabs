@@ -2,21 +2,16 @@ Feature: Menu Page
   Background:
     Given Sudah login
 
-    Scenario: Memastikan menu "All Items" bernavigasi sesuai dengan fungsionalitas
-      When Klik produk detail "Sauce Labs Backpack"
+    Scenario Outline: Memastikan menu "<menu>" bernavigasi sesuai dengan fungsionalitas
+      When Klik produk detail "<product>"
       And  Klik menu button
-      And Klik "All Items"
-      Then Berhasil mengarahkan ke product page
+      And Klik menu "<menu>"
+      Then Berhasil "<navigate>"
 
+      Examples:
+        |menu     |product            |navigate                    |
+        |All Items|Sauce Labs Backpack|mengarahkan ke product page |
+        |About    |Sauce Labs Backpack|mengarahkan ke about page   |
+        |Logout   |Sauce Labs Backpack|mengarahkan ke login page   |
 
-
-
-#    Scenario: Memastikan menu "About" bernavigasi sesuai dengan fungsionalitas
-#      When  Klik menu button
-#      And Klik "About"
-#      Then Berhasil mengarahkan ke about page
-#
-#    Scenario: Memastikan menu "Logout" bernavigasi sesuai dengan fungsionalitas
-#      When  Klik menu button
-#      And Klik "Logout"
-#      Then Berhasil mengarahkan ke login page
+    Scenario : 

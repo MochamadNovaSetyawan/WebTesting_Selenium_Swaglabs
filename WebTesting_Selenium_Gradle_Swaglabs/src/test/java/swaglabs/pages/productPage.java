@@ -19,8 +19,5 @@ public class productPage {
 
     public void KlikProductDetail(String product) {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'"+product+"')]"))).click();
-
     }
-
-
 }

@@ -18,8 +18,9 @@ public class menuPage {
     }
 
     By button_menu = By.className("bm-burger-button");
-    By verify_abotPage = By.className("MuiTypography-body1");
+    By verify_aboutPage = By.className("MuiTypography-body1");
     By Verify_image = By.className("bot_column");
+    By verify_title = By.className("product_label");
 
 
     public void clickMenu() {
@@ -31,23 +32,19 @@ public class menuPage {
     }
 
 
-    public void verifyNavigateAboutPage() {
-        String actualResult = driver.findElement(verify_abotPage).getText();
-        Assert.assertEquals("The world relies on your code. Test on thousands of different device, browser, and OS configurations–anywhere, any time.",actualResult);
-
+    public void verifyNavigatePage(String navigate) {
+        switch(navigate) {
+            case "mengarahkan ke product page":
+                String actualResult1 = driver.findElement(verify_title).getText();
+                Assert.assertEquals("Products",actualResult1);
+                break;
+            case "mengarahkan ke about page":
+                String actualResult2 = driver.findElement(verify_aboutPage).getText();
+                Assert.assertEquals("The world relies on your code. Test on thousands of different device, browser, and OS configurations–anywhere, any time.", actualResult2);
+                break;
+            case "mengarahkan ke login page":
+                wait.until(ExpectedConditions.visibilityOfElementLocated(Verify_image)).isDisplayed();
+                break;
+        }
     }
-
-    public void verifyNavigateLoginPage() {
-        boolean isDisplayed = driver.findElement(Verify_image).isDisplayed();
-        Assert.assertTrue("Elemen tidak ditampilkan", isDisplayed);
-
-    }
-
-//    public void verifyEmptyCart() {
-//        String actualResult = driver.findElement(verify_alert).getText();
-//        Assert.assertEquals(alert,actualResult);
-//
-//    }
-
-
 }
