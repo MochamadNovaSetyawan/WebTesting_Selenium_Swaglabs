@@ -21,7 +21,7 @@ public class menuStep extends base {
         MenuPage.clickItemMenu(menu);
     }
 
-    @Then("Berhasil {string}")
+    @Then("Berhasil mengarahkan ke {string}")
     public void berhasilMengarahkanKeProductPage(String navigate) {
         MenuPage.verifyNavigatePage(navigate);
         tearDown();
