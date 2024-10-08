@@ -15,3 +15,4 @@ Feature: Menu Page
         |Logout   |Sauce Labs Backpack|login page   |
 
     Scenario : Memastikan menu "Reset App State"
+      When
